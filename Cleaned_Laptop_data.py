@@ -89,7 +89,7 @@ fig,axes=plt.subplots(2,2,figsize=(17,10))   # Necessary step to specify number 
 colors=['r','g','b','c']
 for i,axes in zip(range(len(cols)),axes.ravel()):    #zip combines iterators(we can pass as many iterators as we want(here we have two 1.for iterating through columns and colors 2. for axes.ravel())
     data[cols[i]].value_counts().head(10).plot.bar(ax=axes,title= cols[i],color = colors[i])
-#plt.show()    
+# plt.show()    
 
 numerical_var_cols = ['latest_price','discount','star_rating','ratings','reviews']
 sns.boxplot(data=data,x='latest_price')
@@ -102,7 +102,7 @@ for col,ax in zip(numerical_var_cols,axes.ravel()):
     ax.set_title(col)
     ax.xaxis.set_ticks_position('none')
     axes[1,2].set_axis_off()
-#plt.show()    
+# plt.show()    
 
 print(data['star_rating'].describe())
 print(data['star_rating'].value_counts())  
