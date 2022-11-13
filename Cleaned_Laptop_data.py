@@ -1,5 +1,3 @@
-from tkinter import Place
-from joblib import PrintTime
 import numpy as np 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -11,7 +9,7 @@ import os
 #     for filename in filenames:
 #         print(os.path.join(dirname, filename))
 
-data = pd.read_csv('C:\\Users\\20100\\Desktop\\data science\\machine learning\\projects\\regression\\Cleaned_Laptop_data.csv')
+data = pd.read_csv('C:\\Users\\20100\\Desktop\\data science\\machine learning\\projects\\data cleaning&analysis\\Cleaned_Laptop_data.csv')
 # print('Data:\n',data.head(10))
 # print('statistics:\n',data.describe())
 # print('data info:',data.info())
